@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IF · Blocos | Navega Ufal</title>
+  <meta name="description" content="Instituto de Física da UFAL: conheça o bloco, sua história e sua estrutura.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/fonts/montserrat.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+
+  <header class="hist-hero bloco-hero">
+    <img class="bloco-hero-img" src="https://sites.google.com/sitesv-images-rt/AMxu72vSMghMrlw63nCAg47CeHbvo7CkC8XrE2koFxapNzJKozDpURg-JM4ibTmpBNld6H0JuFYGPVSFL2P3YGDnzgCs_xI1hZ-Kbuoze5GeMNibFFVDnX9wkRJGnyD5BPYQQPfbk-DWbfbjTBZVCsgsruZMmB9GW6LBHBhmIs5N7WI9uf-Ksl_sWkplvS02ucf6YQEzUPogynEF5ygM7S8kMqj9yKNaAdQHy6n4Fz4za9Y=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do IF">
+    <div class="blocos-hero-overlay">
+      <h1 style="margin:0">Física</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container bloco-page">
+        <span class="show-ano-static">IF</span>
+        <p class="curso-modal-cred">Instituto de Física. Foto: Navega UFAL.</p>
+        <p>Originou-se em 1974, com Bacharelado em 1987, Mestrado em 1992 e Doutorado em 1999 (conceito 5 na CAPES); oficializado como instituto em 2006.</p>
+        <p>Tem cerca de duas dezenas de laboratórios e é referência no Nordeste em Física pura e aplicada.</p>
+        <div class="acervo-grid">
+          <figure class="acervo-item">
+            <img src="assets/img/historia-2.jpg" alt="Biblioteca com estudantes" loading="lazy">
+            <figcaption>Biblioteca com estudantes. Acervo UFAL.</figcaption>
+          </figure>
+          <figure class="acervo-item">
+            <img src="assets/img/historia-3.jpg" alt="Prédio do campus nos anos iniciais" loading="lazy">
+            <figcaption>Prédio do campus nos anos iniciais. Acervo UFAL.</figcaption>
+          </figure>
+        </div>
+        <p class="curso-modal-cred">Fonte: <a href="https://sites.google.com/view/navegaufal/blocos-universitários/if" target="_blank" rel="noopener">Navega UFAL</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img class="footer-logo-img" src="assets/img/img-1.jpg" alt="Logo Navega Ufal">
+      <p class="footer-tag">Guia de boas-vindas &mdash; Universidade Federal de Alagoas</p>
+      <nav class="footer-contact" aria-label="Contato">
+        <a href="https://www.instagram.com/navega.ufal/" target="_blank" rel="noopener">
+          <img class="ig-icon" src="assets/img/img-2.jpg" alt=""> @navega.ufal
+        </a>
+        <a href="https://ufal.br" target="_blank" rel="noopener">ufal.br</a>
+        <a href="https://ufal.br/ufal/extensao" target="_blank" rel="noopener">ufal.br/ufal/extensao</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Navega Ufal &middot; UFAL</p>
+    </div>
+  </footer>
+
+  <!-- BÚSSOLA + MENU REDONDO P5 -->
+  <div class="compass-nav" id="compassNav">
+    <div class="compass-burst" aria-hidden="true"></div>
+    <div class="compass-needle" id="compassNeedle" aria-hidden="true"></div>
+    <span class="compass-hint" aria-hidden="true">Blocos</span>
+        <ul class="compass-menu" id="compassMenu">
+      <li style="--x:-12px;--y:-225px;--d:0ms" data-rot="2"><a href="index.html"><span class="p5-arrow">▶</span><span>Início</span></a></li>
+      <li style="--x:99px;--y:-202px;--d:60ms" data-rot="35"><a href="historia.html"><span class="p5-arrow">▶</span><span>História</span></a></li>
+      <li style="--x:182px;--y:-132px;--d:120ms" data-rot="60"><a href="blocos.html" class="active" aria-current="page"><span class="p5-arrow">▶</span><span>Blocos</span></a></li>
+      <li style="--x:223px;--y:-31px;--d:180ms" data-rot="85"><a href="sobre.html"><span class="p5-arrow">▶</span><span>Sobre</span></a></li>
+    </ul>
+    <button class="compass-btn" id="compassBtn" aria-expanded="false" aria-controls="compassMenu" aria-label="Abrir navegação">
+      <img src="assets/img/bússola.png" alt="Bússola — abrir navegação">
+    </button>
+  </div>
+
+  <script>
+    (function () {
+      var nav = document.getElementById('compassNav');
+      var btn = document.getElementById('compassBtn');
+      var needle = document.getElementById('compassNeedle');
+      var rose = nav ? nav.querySelector('.compass-btn img') : null;
+      if (!nav || !btn) return;
+      function setOpen(open) {
+        nav.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Fechar navegação' : 'Abrir navegação');
+        var r = open ? '2deg' : '0deg';
+        if (needle && !open) needle.style.transform = 'rotate(2deg)';
+        if (rose) rose.style.transform = 'rotate(' + r + ')';
+      }
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setOpen(!nav.classList.contains('open'));
+      });
+      document.addEventListener('click', function (e) {
+        if (nav.classList.contains('open') && !nav.contains(e.target)) setOpen(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { setOpen(false); btn.focus(); }
+      });
+      nav.querySelectorAll('.compass-menu li').forEach(function (li) {
+        function point() {
+          var r = li.getAttribute('data-rot') || 0;
+          if (needle) needle.style.transform = 'rotate(' + r + 'deg)';
+          if (rose) rose.style.transform = 'rotate(' + r + 'deg)';
+        }
+        li.addEventListener('mouseenter', point);
+        li.addEventListener('focusin', point);
+        li.querySelector('a').addEventListener('click', function () { setOpen(false); });
+      });
+    })();
+  </script>
+</body>
+</html>

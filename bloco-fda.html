@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FDA · Blocos | Navega Ufal</title>
+  <meta name="description" content="Faculdade de Direito da UFAL: conheça o bloco, sua história e sua estrutura.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/fonts/montserrat.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+
+  <header class="hist-hero" style="background-image:url('assets/img/curso-mod-direito.jpg');background-size:cover;background-position:center;padding:0">
+    <div class="blocos-hero-overlay">
+      <h1 style="margin:0">Faculdade de Direito</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container bloco-page">
+        <span class="show-ano-static">FDA</span>
+        <p class="curso-modal-cred">Fachada da Faculdade de Direito de Alagoas (FDA).</p>
+        <p>Ícone da educação jurídica no Brasil, nasceu do sonho de docentes do Liceu Alagoano: fundada em 24 de maio de 1931 e oficializada em 1933, é a quarta escola de Direito do Nordeste e o curso mais antigo da UFAL.</p>
+        <p>Hoje é a maior unidade acadêmica, com cerca de 850 alunos em 15 turmas nos turnos diurno e noturno — e abriga a empresa júnior Legis, fundada em 2018.</p>
+        <div class="acervo-grid">
+          <figure class="acervo-item">
+            <img src="assets/img/criacao-ufal-jk.jpg" alt="Ato de criação da UFAL, 1961" loading="lazy">
+            <figcaption>Ato de criação da UFAL, 1961. Acervo UFAL.</figcaption>
+          </figure>
+          <figure class="acervo-item">
+            <img src="assets/img/historia-2.jpg" alt="Biblioteca com estudantes" loading="lazy">
+            <figcaption>Biblioteca com estudantes. Acervo UFAL.</figcaption>
+          </figure>
+          <figure class="acervo-item">
+            <img src="assets/img/historia-3.jpg" alt="Prédio do campus nos anos iniciais" loading="lazy">
+            <figcaption>Prédio do campus nos anos iniciais. Acervo UFAL.</figcaption>
+          </figure>
+        </div>
+        <p class="curso-modal-cred">Fonte: <a href="https://sites.google.com/view/navegaufal/blocos-universitários/fda" target="_blank" rel="noopener">Navega UFAL</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img class="footer-logo-img" src="assets/img/img-1.jpg" alt="Logo Navega Ufal">
+      <p class="footer-tag">Guia de boas-vindas &mdash; Universidade Federal de Alagoas</p>
+      <nav class="footer-contact" aria-label="Contato">
+        <a href="https://www.instagram.com/navega.ufal/" target="_blank" rel="noopener">
+          <img class="ig-icon" src="assets/img/img-2.jpg" alt=""> @navega.ufal
+        </a>
+        <a href="https://ufal.br" target="_blank" rel="noopener">ufal.br</a>
+        <a href="https://ufal.br/ufal/extensao" target="_blank" rel="noopener">ufal.br/ufal/extensao</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Navega Ufal &middot; UFAL</p>
+    </div>
+  </footer>
+
+  <!-- BÚSSOLA + MENU REDONDO P5 -->
+  <div class="compass-nav" id="compassNav">
+    <div class="compass-burst" aria-hidden="true"></div>
+    <div class="compass-needle" id="compassNeedle" aria-hidden="true"></div>
+    <span class="compass-hint" aria-hidden="true">Blocos</span>
+        <ul class="compass-menu" id="compassMenu">
+      <li style="--x:-12px;--y:-225px;--d:0ms" data-rot="2"><a href="index.html"><span class="p5-arrow">▶</span><span>Início</span></a></li>
+      <li style="--x:99px;--y:-202px;--d:60ms" data-rot="35"><a href="historia.html"><span class="p5-arrow">▶</span><span>História</span></a></li>
+      <li style="--x:182px;--y:-132px;--d:120ms" data-rot="60"><a href="blocos.html" class="active" aria-current="page"><span class="p5-arrow">▶</span><span>Blocos</span></a></li>
+      <li style="--x:223px;--y:-31px;--d:180ms" data-rot="85"><a href="sobre.html"><span class="p5-arrow">▶</span><span>Sobre</span></a></li>
+    </ul>
+    <button class="compass-btn" id="compassBtn" aria-expanded="false" aria-controls="compassMenu" aria-label="Abrir navegação">
+      <img src="assets/img/bússola.png" alt="Bússola — abrir navegação">
+    </button>
+  </div>
+
+  <script>
+    (function () {
+      var nav = document.getElementById('compassNav');
+      var btn = document.getElementById('compassBtn');
+      var needle = document.getElementById('compassNeedle');
+      var rose = nav ? nav.querySelector('.compass-btn img') : null;
+      if (!nav || !btn) return;
+      function setOpen(open) {
+        nav.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Fechar navegação' : 'Abrir navegação');
+        var r = open ? '2deg' : '0deg';
+        if (needle && !open) needle.style.transform = 'rotate(2deg)';
+        if (rose) rose.style.transform = 'rotate(' + r + ')';
+      }
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setOpen(!nav.classList.contains('open'));
+      });
+      document.addEventListener('click', function (e) {
+        if (nav.classList.contains('open') && !nav.contains(e.target)) setOpen(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { setOpen(false); btn.focus(); }
+      });
+      nav.querySelectorAll('.compass-menu li').forEach(function (li) {
+        function point() {
+          var r = li.getAttribute('data-rot') || 0;
+          if (needle) needle.style.transform = 'rotate(' + r + 'deg)';
+          if (rose) rose.style.transform = 'rotate(' + r + 'deg)';
+        }
+        li.addEventListener('mouseenter', point);
+        li.addEventListener('focusin', point);
+        li.querySelector('a').addEventListener('click', function () { setOpen(false); });
+      });
+    })();
+  </script>
+</body>
+</html>

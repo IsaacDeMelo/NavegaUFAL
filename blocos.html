@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blocos Universitários | Navega Ufal</title>
+  <meta name="description" content="Blocos universitários da UFAL: conheça as unidades acadêmicas do Campus A.C. Simões.">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="stylesheet" href="assets/fonts/montserrat.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="topline" aria-hidden="true"></div>
+
+  <header class="hist-hero blocos-hero">
+    <div class="blocos-hero-overlay">
+      <h1>Blocos Universitários</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="bloco-search">
+          <input type="search" id="blocoSearch" placeholder="Pesquisar bloco… (ex: medicina, RU, letras)" aria-label="Pesquisar bloco universitário" autocomplete="off">
+        </div>
+        <p class="bloco-count" id="blocoCount" aria-live="polite"></p>
+        <div class="show-grid" id="blocosGrid">
+          <a class="show-card" href="bloco-cedu.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72upDGakNg2QZAWQ0d0mMkSp8L70GuKJp9y-3IFcUsMIT80O5BPD_GYESiLQ35bxbnzV9emCdVGk8wugOkOPXd_TSmVnuteA_O2E7jd894nTZWf9saOXnYxkUXzo579RSWbSkm1VmGWfXriJ7OvYSuf9E10ANz7FGZ0eAghC0LnlvouWupWt7raE3lWlAyPNfk1CXNc6zzpo7P5aON_oLlCz9i28i4FUDz3C0--f=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do CEDU" loading="lazy"><span class="show-ano">CEDU</span></span>
+            <span class="show-card-body"><strong>Centro de Educação</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-centro-saude.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72szzXzOowe7YIOdWBrb76L9wfvX1KOuPweJaVez-stqRBZbWBDOXQOENCpYRhgPlZd3wldt2TL1TlLlwCq1EIpbpV96erof0qTpO7fODNEgS608ElP6SvXGYrSrwXM3uM8q-PI958O1rxjLnJ772bi43k-CtO1kKwg1FnCrykvRojYBOZy3CgPHVdB32nNwh7_PFwqF3ml91FjtAhrI6H35nYhbPdTl3dUXTVfMzI4=w1280" onerror="this.onerror=null;this.src='assets/img/historia-4.jpg'" alt="Centro de Ciências da Saúde" loading="lazy"><span class="show-ano">CCS</span></span>
+            <span class="show-card-body"><strong>Centro de Ciências da Saúde</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-icf.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72vXkHjEq0QHlW6-pTMc1pY_Hj3-BUqf4BTx2T5Q0N2QWM5Lizc9AsS-0x0yd4djW801yxSnMBirBEW9L2UqXZFPI-Y-cSIMhTCOVbN5P38S9CY2NnZFXanPV1qmPBww9r8uqe5nWUVsu4YTmk2KRE5ZR5TxzGDgOMc1nEdprOAoaMnWc45QeMP9yhmfLgG5oOv0Y97uylZcdGIXkLlKLE-WJj2mwQlNp5MOOnXbfP8=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do ICF" loading="lazy"><span class="show-ano">ICF</span></span>
+            <span class="show-card-body"><strong>Ciências Farmacêuticas</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-fanut.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72usPfZJlmbAXhHbmHdPyOFCsIcQuY91U90Njy_WkTO7YUGnVaTeWonu4LLk-8pt89eCscUsTBcyTl7OtRbCvhugrpqU2SN8DBvGqtIIwJzjnrkrBJg7ky0MhbYhCxYeWJrS5i23jRYmxssU0Iq8cVms64ZgKlytFTTwqlBdwVWSciS1ZD7k2wTDtIhqpMoy2vPGdz7bOMg6eqJmnG1YhjEip92Mr06-Slr_9lF8=w1280" onerror="this.onerror=null;this.src='assets/img/historia-4.jpg'" alt="Prédio da FANUT" loading="lazy"><span class="show-ano">FANUT</span></span>
+            <span class="show-card-body"><strong>Faculdade de Nutrição</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-eenf.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72tyNqBLEEacPlFhg16kxop-VCng71JVy744RT0GDqPLG-ytqpcbP5UeY7BDFSzwbxJ6sfERUeqNZ_iLCKaieTGzmCPUQiT_DFPLaDJSQDN0YjM3HhyhKCvjydD5lFshAtJll21LbrOeygESx_ulcaowV_nKutCy5ef38AoutMb7dT0F2RDrMd_bRqMl8RKYuFrOo_TRdlYFvhJboZ9PglKszPd7haOVuFeuI-Qgk_M=w1280" onerror="this.onerror=null;this.src='assets/img/historia-4.jpg'" alt="Prédio da EENF" loading="lazy"><span class="show-ano">EENF</span></span>
+            <span class="show-card-body"><strong>Escola de Enfermagem</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-foufal.html">
+            <span class="show-card-imgwrap"><img src="assets/img/bloco-foufal.jpg" alt="Prédio da FOUFAL" loading="lazy"><span class="show-ano">FOUFAL</span></span>
+            <span class="show-card-body"><strong>Faculdade de Odontologia</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-ctec.html">
+            <span class="show-card-imgwrap"><img src="assets/img/curso-mod-engenharia.jpg" alt="Rede Galileu, laboratório de computação (LCCV/UFAL)" loading="lazy"><span class="show-ano">CTEC</span></span>
+            <span class="show-card-body"><strong>Centro de Tecnologia</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-fale.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72ty0SIfMEycYu-V8rrAPdkfKknwuEMQ5tkhRD_d3Mteq3QXJtmugseFoKNoMO0RnhQe8TfepspcTbZcM1XWncE3iv4qghMM5ffesq4ZFjqqAymnxYuQwrUzYgk5J8xVT6GgdPE2oJbKRGlbDzLly4utlOtoSSoWqXxI08sxl6SBexnuioiW_8yKSaJPhbU7QfQc05W_NqEvMZuDC6gZ-1xL73VUvhgeQPOxcgCO7yk=w1280" onerror="this.onerror=null;this.src='assets/img/curso-mod-letras.jpg'" alt="Prédio da FALE" loading="lazy"><span class="show-ano">FALE</span></span>
+            <span class="show-card-body"><strong>Faculdade de Letras</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-fau.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72vkKTfm4m-21cRyBePJXhBpZ1pNHMoYrlJH4FJRodtL89zAgbt94RYW8O1T3pRFcRAXHGxRg4b8DydC3sDtb_n0JMln6yWguYw8KFf8692o1vNx_fBdiFKlCER50tFuhK-N1pHTVJXfYU6CBYe0Ez0DjGrzkPhg7stfkjXgckohLD6u9L9dmcs3QzqNMRdzSwdOFW9Fo3YMf5YXPvglpUsxNsAPU0lNclvUbR_y5yQ=w1280" onerror="this.onerror=null;this.src='assets/img/historia-3.jpg'" alt="Prédio da FAU" loading="lazy"><span class="show-ano">FAU</span></span>
+            <span class="show-card-body"><strong>Arquitetura e Urbanismo</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-feac.html">
+            <span class="show-card-imgwrap"><img src="assets/img/curso-mod-economia.jpg" alt="Prédio da FEAC em inauguração (2014)" loading="lazy"><span class="show-ano">FEAC</span></span>
+            <span class="show-card-body"><strong>Economia, Administração e Contabilidade</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-famed.html">
+            <span class="show-card-imgwrap"><img src="assets/img/bloco-famed.jpg" alt="Prédio da FAMED" loading="lazy"><span class="show-ano">FAMED</span></span>
+            <span class="show-card-body"><strong>Faculdade de Medicina</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-fda.html">
+            <span class="show-card-imgwrap"><img src="assets/img/curso-mod-direito.jpg" alt="Prédio da Faculdade de Direito (FDA)" loading="lazy"><span class="show-ano">FDA</span></span>
+            <span class="show-card-body"><strong>Faculdade de Direito</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-fsso.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72uonSA0S64cGo5Ni8obk0atan0BwQvLNmATk-QYDwDqZgVk87pUXCelMQ_QuQmIsaKwKN8hOy8hBOafZZl5wbRt6UXbcnIddOhFjrnN2VhhUXiXSWcw5lhYBcCfz6XGEaQNS5JnQaOaQsrF5k0pPBs3WwpkJCDt6NW7Y4V7v9F_MJz_d5R8VJA-9IZc1Ripx7jCgZADvEvnJ8jOB1nDwgWN_1m7VgKGrcFcymjn=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio da FSSO" loading="lazy"><span class="show-ano">FSSO</span></span>
+            <span class="show-card-body"><strong>Serviço Social</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-ic.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72snl2vBl9bQoq0hqpGbCu3bq5N-iF_eeQhP_-p-yHXhlBNzZkMY4rhcwjQkNQ4WHMDndcAnVmD_jPeSTIv1RwBQJlpe0MW4GFC-Rf3Tcd251uwx1eWbozTQ5peDGGyd-PxvdxQIZu462BnD09wh1CUIYkUC-VoKDyiCeuX7zuRjWhvroDOer2lPRY_edKhTW_fzv4VK-91nQPhZJck7bV0VOMAHjLBqz_xHuI_p0-Q=w1280" onerror="this.onerror=null;this.src='assets/img/curso-mod-engenharia.jpg'" alt="Prédio do IC" loading="lazy"><span class="show-ano">IC</span></span>
+            <span class="show-card-body"><strong>Computação</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-icat.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72vIIRTgkwK4i64ffioSQ6p8y9a9CmneR5LMqHzig08jaaK2Z-mDB4FETTAKkbxRpi5fD5mTTxs27RJTF5Q9RRj9knxYm8hgAojU_mBT70chcU7b5ar5Twgq-fST9ZXmHEOdLTxbyIIzUgV1fsbfhlsQbQrKwHF1DvSK4NXgnOpljFC1JxYuOGWhX-1IFvRd35211M2CEN4T2Whl9pHjkALnD2tOF3MUMwsZAc6Y=w1280" onerror="this.onerror=null;this.src='assets/img/historia-3.jpg'" alt="Prédio do ICAT" loading="lazy"><span class="show-ano">ICAT</span></span>
+            <span class="show-card-body"><strong>Ciências Atmosféricas</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-icbs.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72syfMwhptEoZ6vRiRlb4Z0kqdOc2-CK3qa4C7dkHG1XrKuJduaaHtrDdT0loG46d-v2711Uv07KbhREkz0uoWkpMbNMCFiXakh4ARE7MW8lUumhewxosGJOInP7lIEu8lMdvkYRrglLwcFUAL2VS2BZbtyGG6AbTYuNxfnx1TozC_rfA4zOLUsSQ60dbFuUqMtvyFbaRTZERM4YIu2-4gJkG9Kuk-gS6nwG-uceH70=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do ICBS" loading="lazy"><span class="show-ano">ICBS</span></span>
+            <span class="show-card-body"><strong>Ciências Biológicas e da Saúde</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-ichca.html">
+            <span class="show-card-imgwrap"><img src="assets/img/curso-mod-letras.jpg" alt="Prédio do ICHCA" loading="lazy"><span class="show-ano">ICHCA</span></span>
+            <span class="show-card-body"><strong>Ciências Humanas, Comunicação e Artes</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-ics.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72sx3bDuJIV5uJgl7EYSLToxxyJHU6CVOChhJqfaYSll49G6XD-ZkDvMGPnDsb3VRUlJLbt-gsrWUj3Br1Qa9Rus-1T5q0_2J6UHdBw9PFaaz163g-3TRHLhtL4mLs_wHQV0gco3MmvztIrB-61Ok1bqEw1bWP0s6Q8k94YdtPwn_4msVoIOD0lKpbrGhi8DJJdxXrAFV5DAZTUjFfnQcc6aB3utDW_BVPNrb8aG=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do ICS" loading="lazy"><span class="show-ano">ICS</span></span>
+            <span class="show-card-body"><strong>Ciências Sociais</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-iefe.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72vlPMXrPqink7g1bUIYI_YTw_m6ME4DZmUX39sc4Xarnw0oDe9ZiYo_iLsaRoW3r86mwjgP0hjstVS6FF0HAwFNJf0n3L0YR264Vx6PzA8go8QC4s187UhIb2uNiwS_xmJj7IZp1D85iVbwPqsFCnIhwgeyrKY2zgWjofKfkz5xcBr_AkFbdg06BGEEfSnJbML36CKb4rUrOsWBkAbHMVd4Rh1H6GAChxiCQClZ=w1280" onerror="this.onerror=null;this.src='assets/img/historia-4.jpg'" alt="Espaço do IEFE" loading="lazy"><span class="show-ano">IEFE</span></span>
+            <span class="show-card-body"><strong>Educação Física e Esporte</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-if.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72vSMghMrlw63nCAg47CeHbvo7CkC8XrE2koFxapNzJKozDpURg-JM4ibTmpBNld6H0JuFYGPVSFL2P3YGDnzgCs_xI1hZ-Kbuoze5GeMNibFFVDnX9wkRJGnyD5BPYQQPfbk-DWbfbjTBZVCsgsruZMmB9GW6LBHBhmIs5N7WI9uf-Ksl_sWkplvS02ucf6YQEzUPogynEF5ygM7S8kMqj9yKNaAdQHy6n4Fz4za9Y=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do IF" loading="lazy"><span class="show-ano">IF</span></span>
+            <span class="show-card-body"><strong>Física</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-igdema.html">
+            <span class="show-card-imgwrap"><img src="assets/img/img-130.jpg" alt="Vista do campus da UFAL" loading="lazy"><span class="show-ano">IGDEMA</span></span>
+            <span class="show-card-body"><strong>Geografia, Desenvolvimento e Meio Ambiente</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-im.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72sfn8PUeM3FOA1KRVly-4sd74QK2w3wPVhImNLQQh2Ws8RYdSzH5oPIN_xGh122Mw_tCzp4xTWT8zJnZAlrA_wB6Z7xpXHW6eSLhglbWRmDt6-W9Gg3jRMZ6ypdaaVqwzX0_MpW8pxlnNHJvyDE0CAbFRp6sgqecVr7ycXPcnfijjhVrIZFHmt-0YhjxZ2Z2mGCFMzhwZQpRmEkMQt5Ej80j5bt8BXWKLRpkk-q=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do IM" loading="lazy"><span class="show-ano">IM</span></span>
+            <span class="show-card-body"><strong>Matemática</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-ip.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72sgNBQVn2n0CepZpRlzG5-oEMEX56DVCZ3B7kL0DcQUt-oQKZJiIDwWABU5BCDNA10YfMHgrwdXZLkIrzIK4jT_dcDO_d78U0sHQPULf5Dx7GQRP8auZaWHg6Rt3ub_1okOxvyiFwsglFxORU5o5Q8cNsOAvb-tN1kzQrQ_zhIm_cW6hgcC7pK9d9HNzQwVtCJ_KpoufCL06TbhW7hZmaU1K6BJf7hHeyNl_Rszoco=w1280" onerror="this.onerror=null;this.src='assets/img/historia-4.jpg'" alt="Prédio do IP" loading="lazy"><span class="show-ano">IP</span></span>
+            <span class="show-card-body"><strong>Psicologia</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-iqb.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72vZD6wlIwgdzzVT4ot1ZBf1scqR0xKz4jPlPQ_piksxToFeLzC1eSnd7trd-7FxWIx3zAPJOagdO6Wn7tMgo5tRQCdIWC8gKEun0kIVdyzirJ2V-1Eoi5S5iiskJb2SCIK4fGAZbGMwDLDrCBJmHYDjN5hM3IvZl2YzqMx1h5RWNnLfLH7vokneXWCC2oLqnyCKqqQdrrjSMXG01e_G99f0L8tur1ZzZc5LagEA=w1280" onerror="this.onerror=null;this.src='assets/img/historia-2.jpg'" alt="Prédio do IQB" loading="lazy"><span class="show-ano">IQB</span></span>
+            <span class="show-card-body"><strong>Química e Biotecnologia</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-nees.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72u8fYBqtw4udWgziv8XdEVGZzPiDEeeo-2tSmWjY6k2a64Rsplz6mmXKVk23z1N7VtYhr3FqZqrFPDVCURy40Hzj1H_X_FEAql4TFDdON7WE-nIJd-FsF0Maj35DQSahAWoL504QQ5hjj2Y9C8rMyfSHkVLn6DEcbH_sqIIw9u5voNLL5Bzhp3Zk9PAgqJmT-XYIn-dk9jz1Wjbh028Jd1_KCSkPzj1RfwnQMm-=w1280" onerror="this.onerror=null;this.src='assets/img/curso-mod-engenharia.jpg'" alt="Espaço do NEES" loading="lazy"><span class="show-ano">NEES</span></span>
+            <span class="show-card-body"><strong>NEES</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-reitoria.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72uF5sUOrJR01lxUkkFFnXTIvE3a8SLu5J2c6q3WhSl62Q7R3QzxZafpeTMdhZC8Q3jgeaiP94C7LIU_sKl9EJa-1bhayh8-ivLlYaj0Y9FLjnk7dE4svKypr5hkCkFcGtsqMhxkGOG-EaBLYh7rAoyp--UpvA2r45FnEiJG90gFxBXGnSn8Gs84Tf5qi2-5shYLLgKzXb9tL1ZEBdCUeDCdkdDmmGdd0_04XBOQN0o=w1280" onerror="this.onerror=null;this.src='assets/img/historia-3.jpg'" alt="Prédio da Reitoria" loading="lazy"><span class="show-ano">REITORIA</span></span>
+            <span class="show-card-body"><strong>Reitoria</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-ru.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72vC7Q4bNHVLE1aTkqz2BRkf0-cwCG5bPQT4b5VtpiYOzjr7mV8BPgzJBRDZyuVf3i06yNOjEyf6Adq-Sp6cbZOk5qaczvJ4GU41odH8NbizUYTQqOE01G8QR2f-IJBQyBp7V4lVMTDX5xLnGeVzhERp7IwO-g7W6ku_juDJSh-W7odxxqzCElxh5fTBFvcoW_bk2vRhJQJr07U5rpiMo4BwphUNq8pzhrd4jgiSos0=w1280" onerror="this.onerror=null;this.src='assets/img/historia-4.jpg'" alt="Restaurante Universitário" loading="lazy"><span class="show-ano">RU</span></span>
+            <span class="show-card-body"><strong>Restaurante Universitário</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+          <a class="show-card" href="bloco-rua.html">
+            <span class="show-card-imgwrap"><img src="https://sites.google.com/sitesv-images-rt/AMxu72siQIXjvI6fdITf7bwq_SvqYtihTTdwvDKABJwtkI2qimwDeTLvpNsQ7lLihEmHigJ47Fhsm4v18os5dE7EH7FB7GJdBxoUlOPQ2y8GETS2ntXy6q7tAGbSE4p3WFXwzepPxFr5Vk5KcTFv51XLfgUjQgwUr1yyaDv86cYTdOipwU7_3irRlceizXaucgg=w1280" onerror="this.onerror=null;this.src='assets/img/historia-3.jpg'" alt="Residência Universitária Alagoana" loading="lazy"><span class="show-ano">RUA</span></span>
+            <span class="show-card-body"><strong>Residência Universitária</strong><span>Entrar <i>&rarr;</i></span></span>
+          </a>
+        </div>
+        <p class="bloco-empty" id="blocoEmpty" hidden>Nenhum bloco encontrado.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img class="footer-logo-img" src="assets/img/img-1.jpg" alt="Logo Navega Ufal">
+      <p class="footer-tag">Guia de boas-vindas &mdash; Universidade Federal de Alagoas</p>
+      <nav class="footer-contact" aria-label="Contato">
+        <a href="https://www.instagram.com/navega.ufal/" target="_blank" rel="noopener">
+          <img class="ig-icon" src="assets/img/img-2.jpg" alt=""> @navega.ufal
+        </a>
+        <a href="https://ufal.br" target="_blank" rel="noopener">ufal.br</a>
+        <a href="https://ufal.br/ufal/extensao" target="_blank" rel="noopener">ufal.br/ufal/extensao</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Navega Ufal &middot; UFAL</p>
+    </div>
+  </footer>
+
+  <!-- BÚSSOLA + MENU REDONDO P5 -->
+  <div class="compass-nav" id="compassNav">
+    <div class="compass-burst" aria-hidden="true"></div>
+    <div class="compass-needle" id="compassNeedle" aria-hidden="true"></div>
+    <span class="compass-hint" aria-hidden="true">Blocos</span>
+        <ul class="compass-menu" id="compassMenu">
+      <li style="--x:-12px;--y:-225px;--d:0ms" data-rot="2"><a href="index.html"><span class="p5-arrow">▶</span><span>Início</span></a></li>
+      <li style="--x:99px;--y:-202px;--d:60ms" data-rot="35"><a href="historia.html"><span class="p5-arrow">▶</span><span>História</span></a></li>
+      <li style="--x:182px;--y:-132px;--d:120ms" data-rot="60"><a href="blocos.html" class="active" aria-current="page"><span class="p5-arrow">▶</span><span>Blocos</span></a></li>
+      <li style="--x:223px;--y:-31px;--d:180ms" data-rot="85"><a href="sobre.html"><span class="p5-arrow">▶</span><span>Sobre</span></a></li>
+    </ul>
+    <button class="compass-btn" id="compassBtn" aria-expanded="false" aria-controls="compassMenu" aria-label="Abrir navegação">
+      <img src="assets/img/bússola.png" alt="Bússola — abrir navegação">
+    </button>
+  </div>
+
+  <script>
+    (function () {
+      var nav = document.getElementById('compassNav');
+      var btn = document.getElementById('compassBtn');
+      var needle = document.getElementById('compassNeedle');
+      var rose = nav ? nav.querySelector('.compass-btn img') : null;
+      if (!nav || !btn) return;
+      function setOpen(open) {
+        nav.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        btn.setAttribute('aria-label', open ? 'Fechar navegação' : 'Abrir navegação');
+        var r = open ? '2deg' : '0deg';
+        if (needle && !open) needle.style.transform = 'rotate(2deg)';
+        if (rose) rose.style.transform = 'rotate(' + r + ')';
+      }
+      btn.addEventListener('click', function (e) {
+        e.stopPropagation();
+        setOpen(!nav.classList.contains('open'));
+      });
+      document.addEventListener('click', function (e) {
+        if (nav.classList.contains('open') && !nav.contains(e.target)) setOpen(false);
+      });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') { setOpen(false); btn.focus(); }
+      });
+      nav.querySelectorAll('.compass-menu li').forEach(function (li) {
+        function point() {
+          var r = li.getAttribute('data-rot') || 0;
+          if (needle) needle.style.transform = 'rotate(' + r + 'deg)';
+          if (rose) rose.style.transform = 'rotate(' + r + 'deg)';
+        }
+        li.addEventListener('mouseenter', point);
+        li.addEventListener('focusin', point);
+        li.querySelector('a').addEventListener('click', function () { setOpen(false); });
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      var input = document.getElementById('blocoSearch');
+      var count = document.getElementById('blocoCount');
+      var empty = document.getElementById('blocoEmpty');
+      var cards = Array.prototype.slice.call(document.querySelectorAll('#blocosGrid .show-card'));
+      var total = cards.length;
+      function norm(s) {
+        return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      }
+      function filter() {
+        var q = norm(input.value.trim());
+        var n = 0;
+        cards.forEach(function (c) {
+          var show = !q || norm(c.textContent).indexOf(q) !== -1;
+          c.style.display = show ? '' : 'none';
+          if (show) n++;
+        });
+        count.textContent = q ? (n + ' de ' + total + ' blocos') : '';
+        empty.hidden = n !== 0;
+      }
+      input.addEventListener('input', filter);
+    })();
+  </script>
+</body>
+</html>
